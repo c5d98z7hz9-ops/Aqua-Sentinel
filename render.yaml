@@ -6,4 +6,4 @@ services:
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: voila app.ipynb --port=$PORT --no-browser --Voila.ip=0.0.0.0
+    startCommand: voila Capstone_Mark_Villa_AquaSentinel_Prototype_multiLLM_vFinal0805.ipynb --port=$PORT --no-browser --Voila.ip=0.0.0.0
