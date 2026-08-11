@@ -1,0 +1,9 @@
+# Render "Blueprint" — Render reads this automatically when you create
+# a new Blueprint service, so you don't have to type any settings by hand.
+services:
+  - type: web
+    name: my-notebook-app
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: voila app.ipynb --port=$PORT --no-browser --Voila.ip=0.0.0.0
